@@ -1,0 +1,164 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+
+#repo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.pagination button {
+    margin: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#pages{
+    display: flex;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 20vw;
+    width:60vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-bar2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 10vw;
+    margin-top: 10px;
+    display: none;
+    width:25vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-bar input,.search-bar2 input {
+    flex: 1;
+    padding:15px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+
+.search-bar button,.search-bar2 button {
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+}
+
+.avatar{
+    height: 160px;
+    border-radius: 50%;
+    width: 160px;
+    border: 5px solid rgb(231, 229, 229);
+    padding: 2px;
+}
+
+#bioPanel{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#bioPanel .bioContent {
+    /* Add styles for the content inside the bioPanel */
+    padding: 10px;
+    margin-left: 70px;
+}
+
+#repo-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+#repo-list div{
+    min-height: 25vh;
+    max-width: 25vw;
+    min-width: 25vw;
+    margin: 20px;
+    border: 2px solid black;
+}
+#repo-list div li{
+    padding: 5%;
+    color: #1da0f8;
+    font-size: 20px;
+}
+#repo-list div p{
+    padding-left: 5%;
+}
+#repo-list div ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+    margin-left: -8%;
+}
+#repo-list div ul li{
+    background-color: #3498db;
+    margin-right:5px;
+    color: white;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+#repos-per-page{
+    height: 30px;
+    width: 50px;
+}
+.pageHead{
+    font-family: cursive;
+    margin-left: 10vw;
+}
+@media only screen and (max-width: 720px) {
+    #bioPanel .bioContent {
+        /* Add styles for the content inside the bioPanel */
+        padding: 10px;
+        margin-left: 20px;
+    }
+    #repo-list div{
+        min-height: 20vh;
+        max-width: 70vw;
+        min-width: 70vw;
+        margin: 20px;
+        border: 2px solid black;
+    }
+  }
